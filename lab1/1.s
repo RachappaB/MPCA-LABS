@@ -1,4 +1,4 @@
-
+; this code copy an array from one address from other memory address 
 .TEXT
 LDR R0, =A
 LDR R1, =B
