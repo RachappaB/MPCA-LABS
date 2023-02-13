@@ -1,18 +1,11 @@
-    .data
-        number: .word 4
-        result: .word 1
-    .text
-        LDR R0, =number
-        LDR R1, [R0]
-        MOV R2, #1
-        LDR R3, =result
-        LOOP:
-            CMP R1, #0
-            BEQ END
-            MUL R5, R2, R1
-            MOV R2,R5
-            SUBS R1, R1, #1
-            BNE LOOP
-        END:
-            STR R2, [R3]
-            SWI 0
+.text
+MOV R0,#5
+MOV R1,#5
+LOOP:SUB R0,R0,#1
+MUL R2,R1,R0
+MOV R1,R2
+CMP R0,#1
+BEQ EXIT
+B LOOP
+EXIT:SWI 0x11
+.end

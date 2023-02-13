@@ -1,4 +1,6 @@
-; this code copy an array from one address from other memory address 
+; this code copy an array from one address from other memory address  .
+; Implementation of ARM7TDMI-ISA to Block transfer of
+data items
 .TEXT
 LDR R0, =A
 LDR R1, =B
