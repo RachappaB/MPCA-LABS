@@ -1,0 +1,25 @@
+
+.TEXT
+
+LDR R0, =A
+LDR R1, =B
+LDR R2, =c
+MOV R3, #0
+MOV R4, #0
+MOV R10, #3
+MOV R8, #0
+
+
+LOOP1:
+    MLA R11,R3,R10,R8
+    
+
+
+END:
+SWI 0X011
+
+
+.DATA
+A: .WORD 1, 2, 3, 4
+B: .WORD 2, 3, 4, 5
+B: .WORD 0, 0, 0, 0

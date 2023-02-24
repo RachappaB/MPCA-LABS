@@ -18,10 +18,13 @@ BNE LOOP
 
 MOV R3, #5
 LOOP1:
-LDR R2, [R5]
-ADD R5, R5, #4
-SUBS R3, R3, #1
-BNE LOOP1
+    LDR R2, [R5]
+    ADD R5, R5, #4
+    SUBS R3, R3, #1
+    BNE LOOP1
+
+
+
 SWI 0X011
 
 .DATA
