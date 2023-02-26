@@ -1,9 +1,26 @@
-Program 1:          Write a program in ARM7TDMI-ISA to search for an element in an array. Display appropriate messages on the standard output device.For Successful search display as “Successful Search”   and if the search is unsuccessful, display as “Unsuccessful Search”. Use  Binary search Technique/linear search..
+Solve A2.1 and A2.2 given in the Course information
 
-Program 2:      Write a program in ARM7TDMI-ISA to find a sub string in a  given main string.
-          Example1:  Main string :   My name is Bond. 
-                               Character :   ‘name’.
-Expected    Output : “String Present” 
+Solve the below problems:
+
+
+Consider the following sequence of instructions in MIPS architecture.
+LDR  R1, [R2,#40]
+ADD R2, R3, R3
+ADD R1, R1, R2
+STR R1, [R2,#20]
+a.  Find all dependencies in this instruction sequence.
+b.  Find all hazards in this instruction sequence for a five stage pipeline with and without data forwarding.
+c.  Find whether NOPs are required to be introduced inspite of data   forwarding in this instruction sequence
+
+
+.Consider the following sequence of instructions in MIPS architecture.
+               LDR  R1, [R6,#40]
+               BEQ  R2, R3, LABEL2   ; BRANCH TAKEN
+               ADD R1, R6, R4
+LABEL2:BEQ R1,R2, LABEL1      ; BRANCH NOT TAKEN
+               STR R2,[R4, #20]
+               AND R1, R1, R4
  
-          Example2:  Main string :   My name is Bond. 
-                               Character :   ‘James’.Expected Output : “String Absent”
+a.   Draw the pipeline execution diagram for this code, assuming there are
+  no delay slots and that branches execute in the EX stage.b.   Repeat the exercise mentioned in a and draw the 
+  pipeline execution diagram for this code, assuming that delay slots are used by writing a “SAFE INSTRUCTION” in the delay slot.
