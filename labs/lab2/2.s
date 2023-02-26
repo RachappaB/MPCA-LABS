@@ -1,0 +1,13 @@
+ .data
+ A: .word 6 
+.text 
+LDR R0,=A 
+LDR R1,[R0] 
+LDR R3,[R0] 
+MOV R4,R1 
+LOOP:
+SUB R3,R3,#1 
+MUL R4,R3,R4 
+CMP R3,#1 
+BNE LOOP 
+SWI 0X011
