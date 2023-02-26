@@ -1,0 +1,9 @@
+Program 1:          Write a program in ARM7TDMI-ISA to search for an element in an array. Display appropriate messages on the standard output device.For Successful search display as “Successful Search”   and if the search is unsuccessful, display as “Unsuccessful Search”. Use  Binary search Technique/linear search..
+
+Program 2:      Write a program in ARM7TDMI-ISA to find a sub string in a  given main string.
+          Example1:  Main string :   My name is Bond. 
+                               Character :   ‘name’.
+Expected    Output : “String Present” 
+ 
+          Example2:  Main string :   My name is Bond. 
+                               Character :   ‘James’.Expected Output : “String Absent”
